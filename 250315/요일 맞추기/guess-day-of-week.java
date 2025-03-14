@@ -5,7 +5,7 @@ public class Main {
         if (result == 0)
             return "Mon";
         else if (result == 1)
-            return "Tues";
+            return "Tue";
         else if (result == 2)
             return "Wed";
         else if (result == 3)
