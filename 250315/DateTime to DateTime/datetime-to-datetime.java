@@ -17,7 +17,7 @@ public class Main {
         int C = sc.nextInt(); // 분
         // Please write your code here.
         
-        if(A<=11 && B<=11 && C<11){
+        if(A < 11 || (A == 11 && B < 11) || (A == 11 && B == 11 && C < 11)){
             System.out.print("-1");
         }
         else{
