@@ -20,10 +20,7 @@ public class Main {
             return false;
         }
 
-        int len = a.length - b.length;
-
-
-        for(int i=0; i<len;i++){
+        for(int i=0; i<b.length;i++){
             if (b[i]==a[init_idx++]){
                 
             }
