@@ -16,7 +16,7 @@ public class Main {
 
        while(true){
         
-            if(arr[idx]==0||idx==9){
+            if(idx==10||arr[idx]==0){
                 break;
             }
             else if(arr[idx]%2==0){
