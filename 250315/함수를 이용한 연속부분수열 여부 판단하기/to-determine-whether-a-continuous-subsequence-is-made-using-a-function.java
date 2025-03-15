@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Main {
 
     public static int idx(int[] a, int[] b){
+        
+        if (a.length <b.length){
+            return -1;
+        }
 
         for(int i=0; i<a.length; i++){
             if(a[i]==b[0]){
@@ -16,18 +20,30 @@ public class Main {
         
         int init_idx = idx(a,b);
         
-        if (init_idx == -1){
+        if (init_idx == -1 ){
             return false;
         }
+        else if(a.length == b.length){
+            for(int i=0; i<b.length; i++){
+                if (a[i]==b[i]){
 
-        for(int i=0; i<b.length;i++){
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+        else{
+            for(int i=0; i<b.length;i++){
             if (b[i]==a[init_idx++]){
                 
             }
             else{
                 return false;
+                }
             }
         }
+
         return true;
     }
 
