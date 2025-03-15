@@ -15,7 +15,13 @@ public class Main {
     public static boolean IsAnswer(int[]a, int[] b){
         
         int init_idx = idx(a,b);
+        
+        if (init_idx == -1){
+            return false;
+        }
+
         int len = a.length - b.length;
+
 
         for(int i=0; i<len;i++){
             if (b[i]==a[init_idx++]){
