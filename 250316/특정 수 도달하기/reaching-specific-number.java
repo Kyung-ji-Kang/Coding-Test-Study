@@ -26,6 +26,8 @@ public class Main {
         }
 
         float aver = (float)sum/count;
-       System.out.println(sum+" "+aver); // "3.1
+        String aver_formated = String.format("%.1f", aver);
+
+       System.out.println(sum+" "+aver_formated); // "3.1
     }
 }
