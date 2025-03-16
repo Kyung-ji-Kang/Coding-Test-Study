@@ -39,19 +39,18 @@ public class Main {
             for(int i=0; i<N1-N2; i++){
                 if(B[0]==A[i]){
                     A_idx = i;
-                    break;
+                        for(int j=0; j<N2; j++){
+                        if(A[A_idx++] == B[j]){
+                            Answer = "Yes";
+                        }
+                        else{
+                            Answer = "No";
+                        }
+                    }
                 }
             }
 
-            for(int i=0; i<N2; i++){
-                if(A[A_idx++] == B[i]){
-                    Answer = "Yes";
-                }
-                else{
-                    Answer = "No";
-                }
-            }
-
+            
         }
           
           System.out.print(Answer);
