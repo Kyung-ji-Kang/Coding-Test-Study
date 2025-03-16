@@ -19,7 +19,7 @@ public class Main {
             B[i] = sc.nextInt();
         }
         
-        String Answer = "";
+        String Answer = "No";
         if(N1<N2){
             Answer = "No";
         }
