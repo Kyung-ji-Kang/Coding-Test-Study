@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
 
-    public static final int MAX = 100; 
+    public static final int MAX = 200; 
 
     //최대값을 찾는 함수
     public static int Find_Max(int[] arr){
