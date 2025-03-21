@@ -7,7 +7,7 @@ public class Main {
     Scanner sc = new Scanner(System.in);
 
     int n = sc.nextInt();
-    int sum = 1;
+    int sum = 0;
     int count = 1;
 
     while(true){
